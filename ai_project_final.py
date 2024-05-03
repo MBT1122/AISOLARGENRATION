@@ -254,13 +254,6 @@ cut_bins =[0, 12, 24, 36, 48, 60, 72, 84, 96]
 df_train['BIN'] = pd.cut(df_train['BLOCK'], bins=cut_bins, labels = cut_blocks)
 display(df_train)
 
-!pip install scikeras[tensorflow]      # gpu compute platform
-!pip install scikeras[tensorflow-cpu]  # cpu
-
-!pip install tensorflow
-
-!pip install scikeras
-
 #Now the data is ready for training
 #We will use 7 different regression algorithms with default parameters, including a 3 layered neural network regressor
 # ANN Model
