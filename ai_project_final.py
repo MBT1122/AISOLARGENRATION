@@ -4,7 +4,6 @@ import os
 import zipfile
 import streamlit as st
 from functools import reduce
-from xgboost import XGBRegressor
 
 @st.cache
 def load_data():
