@@ -4,15 +4,7 @@ import os
 import zipfile
 import streamlit as st
 from functools import reduce
-from sklearn.preprocessing import StandardScaler
-from sklearn.pipeline import Pipeline
-from sklearn.tree import DecisionTreeRegressor
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.linear_model import LinearRegression, Ridge, Lasso
-from sklearn.metrics import mean_squared_error
 from xgboost import XGBRegressor
-from sklearn.model_selection import StratifiedKFold
-from sklearn.model_selection import RandomizedSearchCV
 
 @st.cache
 def load_data():
